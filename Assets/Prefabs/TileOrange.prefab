@@ -35,13 +35,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1749442342343550}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.344, y: 8.447, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.38268343, w: 0.92387956}
+  m_LocalPosition: {x: -1.77, y: -0.42999935, z: 0.123046875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 45}
 --- !u!61 &61686494059833538
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 455d8b94564c12145bf1a373550b3d7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  breaksound: {fileID: 8300000, guid: 8eae8f749afb3a34cb529426f809c0c5, type: 3}
 --- !u!212 &212318234686791872
 SpriteRenderer:
   m_ObjectHideFlags: 1
