@@ -760,7 +760,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d1740838f4317e54c9f0e80e9284faa2, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1185,18 +1185,6 @@ Prefab:
     - target: {fileID: 1749442342343550, guid: ff8d419fd91f85d4e89ab897bad10313, type: 2}
       propertyPath: m_Name
       value: TileOrange (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4788195248362022, guid: ff8d419fd91f85d4e89ab897bad10313, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4788195248362022, guid: ff8d419fd91f85d4e89ab897bad10313, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4788195248362022, guid: ff8d419fd91f85d4e89ab897bad10313, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff8d419fd91f85d4e89ab897bad10313, type: 2}
@@ -2478,17 +2466,10 @@ Prefab:
       propertyPath: m_Name
       value: TilePink (14)
       objectReference: {fileID: 0}
-    - target: {fileID: 4992032188579270, guid: 4c4ece3d03d19ab489fe43e4a5600c03, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4992032188579270, guid: 4c4ece3d03d19ab489fe43e4a5600c03, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4992032188579270, guid: 4c4ece3d03d19ab489fe43e4a5600c03, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 45
+    - target: {fileID: 114286251596983952, guid: 4c4ece3d03d19ab489fe43e4a5600c03,
+        type: 2}
+      propertyPath: volume
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c4ece3d03d19ab489fe43e4a5600c03, type: 2}
@@ -2731,18 +2712,6 @@ Prefab:
     - target: {fileID: 1008921376811004, guid: 4c4ece3d03d19ab489fe43e4a5600c03, type: 2}
       propertyPath: m_Name
       value: TilePink (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4992032188579270, guid: 4c4ece3d03d19ab489fe43e4a5600c03, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4992032188579270, guid: 4c4ece3d03d19ab489fe43e4a5600c03, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4992032188579270, guid: 4c4ece3d03d19ab489fe43e4a5600c03, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c4ece3d03d19ab489fe43e4a5600c03, type: 2}
