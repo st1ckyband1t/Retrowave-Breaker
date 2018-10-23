@@ -1475,6 +1475,11 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114834981845459570, guid: c91ea88ae9c911345b4b8c7f3c815b0d,
+        type: 2}
+      propertyPath: blockBreakPoints
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c91ea88ae9c911345b4b8c7f3c815b0d, type: 2}
   m_IsPrefabAsset: 0

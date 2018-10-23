@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 4865043445164228}
   - component: {fileID: 114834981845459570}
   m_Layer: 0
-  m_Name: GameStatus
+  m_Name: GameSession
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameSpeed: 1
-  blockBreakPoints: 10
+  blockBreakPoints: 25
   scoreText: {fileID: 114893177074052086}
   currentScore: 0
 --- !u!114 &114893177074052086
