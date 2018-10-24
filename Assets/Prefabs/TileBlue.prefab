@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1241524983060798}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.797, y: 3.35, z: 0.123046875}
+  m_LocalPosition: {x: 2.449, y: 9.338, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -54,7 +54,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0024609566, y: 0.00492239}
+  m_Offset: {x: 0.0012087822, y: -0.00058221817}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -65,7 +65,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.91645145, y: 0.9115305}
+  m_Size: {x: 0.89443207, y: 0.8858404}
   m_EdgeRadius: 0
 --- !u!114 &114791562305353234
 MonoBehaviour:
@@ -80,6 +80,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breaksound: {fileID: 8300000, guid: 8eae8f749afb3a34cb529426f809c0c5, type: 3}
   volume: 0.1
+  particleEffectVFX: {fileID: 1739278014383782, guid: a7f0075bec3f6a345899202ba843cffc,
+    type: 2}
 --- !u!212 &212352381696694592
 SpriteRenderer:
   m_ObjectHideFlags: 1

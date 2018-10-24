@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1749442342343550}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.794, y: 3.346, z: 0.123046875}
+  m_LocalPosition: {x: 3.344, y: 8.447, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,6 +80,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   breaksound: {fileID: 8300000, guid: 8eae8f749afb3a34cb529426f809c0c5, type: 3}
   volume: 0.1
+  particleEffectVFX: {fileID: 1809684148323714, guid: 14b081d5125019d42a71355bab8218cf,
+    type: 2}
 --- !u!212 &212318234686791872
 SpriteRenderer:
   m_ObjectHideFlags: 1

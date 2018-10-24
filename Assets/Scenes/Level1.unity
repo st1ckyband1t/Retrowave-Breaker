@@ -249,26 +249,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 61155368649263140, guid: 82463909517f7ac4f93cfffc8dc5e2ff,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.00058221817
-      objectReference: {fileID: 0}
-    - target: {fileID: 61155368649263140, guid: 82463909517f7ac4f93cfffc8dc5e2ff,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.8858404
-      objectReference: {fileID: 0}
-    - target: {fileID: 61155368649263140, guid: 82463909517f7ac4f93cfffc8dc5e2ff,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.0012087822
-      objectReference: {fileID: 0}
-    - target: {fileID: 61155368649263140, guid: 82463909517f7ac4f93cfffc8dc5e2ff,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.89443207
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82463909517f7ac4f93cfffc8dc5e2ff, type: 2}
   m_IsPrefabAsset: 0
@@ -1428,11 +1408,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 224492342222738016, guid: c91ea88ae9c911345b4b8c7f3c815b0d,
-        type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4865043445164228, guid: c91ea88ae9c911345b4b8c7f3c815b0d, type: 2}
       propertyPath: m_LocalPosition.x
       value: 7.766888
@@ -1475,10 +1450,10 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114834981845459570, guid: c91ea88ae9c911345b4b8c7f3c815b0d,
+    - target: {fileID: 224492342222738016, guid: c91ea88ae9c911345b4b8c7f3c815b0d,
         type: 2}
-      propertyPath: blockBreakPoints
-      value: 25
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c91ea88ae9c911345b4b8c7f3c815b0d, type: 2}
