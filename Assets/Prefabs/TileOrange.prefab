@@ -82,6 +82,11 @@ MonoBehaviour:
   volume: 0.1
   particleEffectVFX: {fileID: 1809684148323714, guid: 14b081d5125019d42a71355bab8218cf,
     type: 2}
+  maxHits: 3
+  hitSprites:
+  - {fileID: 21300000, guid: a021acd6e28b72d4287faab7b87a4335, type: 3}
+  - {fileID: 21300000, guid: 459a63d37f88bf3429626fd572dc7426, type: 3}
+  timesHit: 0
 --- !u!212 &212318234686791872
 SpriteRenderer:
   m_ObjectHideFlags: 1

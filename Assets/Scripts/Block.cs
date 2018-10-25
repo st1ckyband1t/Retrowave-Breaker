@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class Block : MonoBehaviour {
 
+
+    //config params
     [SerializeField] AudioClip breaksound;
     [SerializeField] float volume = 0.5f;
     [SerializeField] GameObject particleEffectVFX;
+    [SerializeField] int maxHits;
+    [SerializeField] Sprite[] hitSprites;
 
     //cached reference
     Level level;
     GameSession score;
+
+    //states
+    [SerializeField] int timesHit; //serialized just for debugging purposes
 
     private void Start()
     {
@@ -38,7 +45,21 @@ public class Block : MonoBehaviour {
     {
         if (tag == "BreakableTile")
         {
+            HandleHits();
+        }
+    }
+
+    private void HandleHits()
+    {
+        ++timesHit;
+        if (timesHit >= maxHits)
+        {
             DestroyBlock();
+        }
+        else
+        {
+            int spriteIndex = timesHit - 1;
+            GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
         }
     }
 
