@@ -693,7 +693,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: NeonDisco SDF Material
   m_Shader: {fileID: 4800000, guid: 68e6db2ebdc24f95958faec2be5558d6, type: 3}
-  m_ShaderKeywords: BEVEL_ON GLOW_ON
+  m_ShaderKeywords: GLOW_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -737,10 +737,10 @@ Material:
     - _FaceDilate: 0
     - _FaceUVSpeedX: 0
     - _FaceUVSpeedY: 0
-    - _GlowInner: 0.328
-    - _GlowOffset: -0.29
+    - _GlowInner: 0.273
+    - _GlowOffset: 0.135
     - _GlowOuter: 1
-    - _GlowPower: 1
+    - _GlowPower: 0.321
     - _GradientScale: 6
     - _LightAngle: 1.01
     - _MaskSoftnessX: 0
@@ -752,7 +752,7 @@ Material:
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
     - _ScaleRatioA: 0.8333333
-    - _ScaleRatioB: 0.6770833
+    - _ScaleRatioB: 0.5965492
     - _ScaleRatioC: 0.6770833
     - _ScaleX: 1
     - _ScaleY: 1
