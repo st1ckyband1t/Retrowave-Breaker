@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class BallScript : MonoBehaviour {
@@ -9,15 +7,21 @@ public class BallScript : MonoBehaviour {
     [SerializeField] Paddle paddle1;
     [SerializeField] float xPushVel = 2f;
     [SerializeField] float yPushVel = 15f;
+    [SerializeField] float randomFactor = 0.2f;
+
     //state
     Vector2 paddleToBallVec;
     bool hasStarted = false;
+
+    //cached reference
+    Rigidbody2D myrigidBody2D;
 
 
     // Use this for initialization
     void Start ()
     {
         paddleToBallVec = transform.position - paddle1.transform.position;
+        myrigidBody2D = GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
@@ -35,7 +39,7 @@ public class BallScript : MonoBehaviour {
         if (Input.GetMouseButton(0))
         {
             hasStarted = true;
-            GetComponent<Rigidbody2D>().velocity = new Vector2(xPushVel, yPushVel);
+            myrigidBody2D.velocity = new Vector2(xPushVel, yPushVel);
         }
     }
 
@@ -47,9 +51,12 @@ public class BallScript : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Vector2 velocityTweak = new Vector2(Random.Range(0f, randomFactor), Random.Range(0f, randomFactor));
+
         if (hasStarted)
         {
             GetComponent<AudioSource>().Play();
+            myrigidBody2D.velocity += velocityTweak;
         }   
     }
 }
