@@ -83,6 +83,9 @@ MonoBehaviour:
   particleEffectVFX: {fileID: 1165383645601780, guid: 07b8ce4f3e01f7647ba1d11656ac3e3f,
     type: 2}
   maxHits: 3
+  hitSprites:
+  - {fileID: 21300000, guid: a021acd6e28b72d4287faab7b87a4335, type: 3}
+  - {fileID: 21300000, guid: 459a63d37f88bf3429626fd572dc7426, type: 3}
   timesHit: 0
 --- !u!212 &212011500964681130
 SpriteRenderer:

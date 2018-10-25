@@ -9,7 +9,6 @@ public class Block : MonoBehaviour {
     [SerializeField] AudioClip breaksound;
     [SerializeField] float volume = 0.5f;
     [SerializeField] GameObject particleEffectVFX;
-    [SerializeField] int maxHits;
     [SerializeField] Sprite[] hitSprites;
 
     //cached reference
@@ -52,14 +51,27 @@ public class Block : MonoBehaviour {
     private void HandleHits()
     {
         ++timesHit;
+        int maxHits = hitSprites.Length  + 1;
         if (timesHit >= maxHits)
         {
             DestroyBlock();
         }
         else
         {
-            int spriteIndex = timesHit - 1;
+            ShowNextDamagedSprite();
+        }
+    }
+
+    private void ShowNextDamagedSprite()
+    {
+        int spriteIndex = timesHit - 1;
+        if (hitSprites[spriteIndex] != null)
+        {
             GetComponent<SpriteRenderer>().sprite = hitSprites[spriteIndex];
+        }
+        else
+        {
+            Debug.LogError("Sprite Missing from array of " + gameObject.name);
         }
     }
 
