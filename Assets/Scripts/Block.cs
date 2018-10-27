@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,6 +10,8 @@ public class Block : MonoBehaviour {
     [SerializeField] AudioClip breaksound;
     [SerializeField] float volume = 0.5f;
     [SerializeField] GameObject particleEffectVFX;
+    [SerializeField] GameObject powerUp;
+    [SerializeField] int randonUpperLimit = 20;
     [SerializeField] Sprite[] hitSprites;
 
     //cached reference
@@ -38,13 +41,24 @@ public class Block : MonoBehaviour {
         DestroyIfBreakable();
         ParticleVFX();
         PlayImpactAudio();
+        
+
+    }
+
+    private void SpawnPowerUp()
+    {
+        int rand = Random.Range(0, randonUpperLimit);
+        if (rand < 2)
+        {
+            Instantiate(powerUp, transform.position, transform.rotation);
+        }
     }
 
     private void DestroyIfBreakable()
     {
         if (tag == "BreakableTile")
         {
-            HandleHits();
+            HandleHits();   
         }
     }
 
@@ -80,6 +94,7 @@ public class Block : MonoBehaviour {
         Destroy(gameObject);
         level.BlockDestroyed();
         score.AddScore();
+        SpawnPowerUp();
     }
 
     private void PlayImpactAudio()

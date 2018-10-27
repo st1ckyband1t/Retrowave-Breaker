@@ -82,7 +82,7 @@ MonoBehaviour:
   volume: 0.1
   particleEffectVFX: {fileID: 1165383645601780, guid: 07b8ce4f3e01f7647ba1d11656ac3e3f,
     type: 2}
-  maxHits: 3
+  powerUp: {fileID: 1862968840851832, guid: 3a2203820e9908a43a8c9e8f94fbb0a3, type: 2}
   hitSprites:
   - {fileID: 21300000, guid: a021acd6e28b72d4287faab7b87a4335, type: 3}
   - {fileID: 21300000, guid: 459a63d37f88bf3429626fd572dc7426, type: 3}
