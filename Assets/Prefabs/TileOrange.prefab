@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1749442342343550}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.794, y: 3.346, z: 0.123046875}
+  m_LocalPosition: {x: 10.449, y: 8.447, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,6 +83,7 @@ MonoBehaviour:
   particleEffectVFX: {fileID: 1809684148323714, guid: 14b081d5125019d42a71355bab8218cf,
     type: 2}
   powerUp: {fileID: 1862968840851832, guid: 3a2203820e9908a43a8c9e8f94fbb0a3, type: 2}
+  randonUpperLimit: 20
   hitSprites: []
   timesHit: 0
 --- !u!212 &212318234686791872
