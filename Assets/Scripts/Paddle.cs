@@ -8,6 +8,8 @@ public class Paddle : MonoBehaviour {
     [SerializeField] float screenWidthInWorldUnits = 16f;
     [SerializeField] float minX = 1.54f;
     [SerializeField] float maxX = 14.45f;
+    [SerializeField] AudioClip powerUpSound;
+    [SerializeField] float volume = 0.5f;
 
 
     //cached references
@@ -37,6 +39,16 @@ public class Paddle : MonoBehaviour {
         else
         {
             return Input.mousePosition.x / Screen.width * screenWidthInWorldUnits; 
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "PowerUP")
+        {
+            //Debug.Log("Paddle collided with" + collision.gameObject.name);
+            AudioSource.PlayClipAtPoint(powerUpSound, Camera.main.transform.position, volume);
+            Destroy(collision.gameObject);
         }
     }
 }

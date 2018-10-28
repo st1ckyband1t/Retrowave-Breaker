@@ -7,6 +7,7 @@ TagManager:
   - UnbreakableTile
   - BreakableTile
   - Ball
+  - PowerUP
   layers:
   - Default
   - TransparentFX
