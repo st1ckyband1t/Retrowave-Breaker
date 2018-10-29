@@ -285,6 +285,7 @@ MonoBehaviour:
   xPushVel: 2
   yPushVel: 15
   randomFactor: 0.5
+  hasStarted: 0
 --- !u!212 &212466643143213778
 SpriteRenderer:
   m_ObjectHideFlags: 1
