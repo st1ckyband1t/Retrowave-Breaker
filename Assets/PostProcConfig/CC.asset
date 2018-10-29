@@ -72,7 +72,7 @@ MonoBehaviour:
     m_Enabled: 0
     m_Settings:
       focusDistance: 10
-      aperture: 5.6
+      aperture: 2.5
       focalLength: 50
       useCameraFov: 0
       kernelSize: 1
@@ -128,9 +128,9 @@ MonoBehaviour:
         contrast: 1
       channelMixer:
         red: {x: 1, y: 0, z: 0}
-        green: {x: 0, y: 0.75, z: 0}
-        blue: {x: 0, y: 0, z: 0.8}
-        currentEditingChannel: 2
+        green: {x: 0, y: 1, z: 0}
+        blue: {x: 0, y: 0, z: 1}
+        currentEditingChannel: 0
       colorWheels:
         mode: 1
         log:

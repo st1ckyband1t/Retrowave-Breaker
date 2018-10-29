@@ -72,7 +72,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MKGlowPower: 0.28
+    - _MKGlowPower: 0.25
     - _MKGlowTexStrength: 0.1
     - _Metallic: 0
     - _Mode: 0
