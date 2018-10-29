@@ -441,6 +441,11 @@ Prefab:
       propertyPath: paddle1
       value: 
       objectReference: {fileID: 1400006822}
+    - target: {fileID: 50470969937040000, guid: 1e8b02c82078c1e4fb67f2a8547ad61d,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e8b02c82078c1e4fb67f2a8547ad61d, type: 2}
   m_IsPrefabAsset: 0
@@ -1214,23 +1219,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c4ece3d03d19ab489fe43e4a5600c03, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1012612586 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1759588435041172, guid: 0c90f5ca3af98814eab0054842a96d80,
-    type: 2}
-  m_PrefabInternal: {fileID: 1540306684}
---- !u!114 &1012612591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1012612586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 801c5888bc7a51845892ba4be2bae8be, type: 2}
 --- !u!1001 &1056267985
 Prefab:
   m_ObjectHideFlags: 0
@@ -1877,11 +1865,6 @@ Prefab:
     - target: {fileID: 4662596960190804, guid: 0c90f5ca3af98814eab0054842a96d80, type: 2}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114516260890225564, guid: 0c90f5ca3af98814eab0054842a96d80,
-        type: 2}
-      propertyPath: glowLayer.m_Bits
-      value: 12032
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c90f5ca3af98814eab0054842a96d80, type: 2}

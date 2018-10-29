@@ -1880,7 +1880,7 @@ MonoBehaviour:
   gameSpeed: 1
   blockBreakPoints: 25
   scoreText: {fileID: 694942926}
-  isAutoplayEnabled: 0
+  isAutoplayEnabled: 1
   currentScore: 0
 --- !u!4 &1168348423
 Transform:
@@ -1981,6 +1981,11 @@ Prefab:
     - target: {fileID: 4662596960190804, guid: 0c90f5ca3af98814eab0054842a96d80, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114516260890225564, guid: 0c90f5ca3af98814eab0054842a96d80,
+        type: 2}
+      propertyPath: glowLayer.m_Bits
+      value: 16128
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c90f5ca3af98814eab0054842a96d80, type: 2}
