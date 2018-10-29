@@ -301,6 +301,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db2b82c18368cee44932e65d452b9091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lives: 3
+  ball: {fileID: 1381633166253304, guid: 1e8b02c82078c1e4fb67f2a8547ad61d, type: 2}
 --- !u!212 &212457114483338382
 SpriteRenderer:
   m_ObjectHideFlags: 1

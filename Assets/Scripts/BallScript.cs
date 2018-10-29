@@ -18,10 +18,11 @@ public class BallScript : MonoBehaviour {
 
 
     // Use this for initialization
-    void Start ()
+    void Start()//used awake here as it is better after instantiation
     {
         paddleToBallVec = transform.position - paddle1.transform.position;
         myrigidBody2D = GetComponent<Rigidbody2D>();
+        //Debug.Log("Awake method is running");
 	}
 	
 	// Update is called once per frame

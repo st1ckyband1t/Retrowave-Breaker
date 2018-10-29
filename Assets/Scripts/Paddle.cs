@@ -17,7 +17,7 @@ public class Paddle : MonoBehaviour {
     BallScript theBall;
 
     // Use this for initialization
-	void Start () {
+	void Awake () {
         theGameSession = FindObjectOfType<GameSession>();
         theBall = FindObjectOfType<BallScript>();
     }
