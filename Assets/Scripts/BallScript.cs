@@ -11,14 +11,14 @@ public class BallScript : MonoBehaviour {
 
     //state
     Vector2 paddleToBallVec;
-    bool hasStarted = false;
+    public bool hasStarted = false;
 
     //cached reference
     Rigidbody2D myrigidBody2D;
 
 
     // Use this for initialization
-    void Start()//used awake here as it is better after instantiation
+    void Awake()//used awake here as it is better after instantiation
     {
         paddleToBallVec = transform.position - paddle1.transform.position;
         myrigidBody2D = GetComponent<Rigidbody2D>();

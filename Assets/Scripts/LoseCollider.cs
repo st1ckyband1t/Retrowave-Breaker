@@ -9,19 +9,18 @@ public class LoseCollider : MonoBehaviour {
     [SerializeField] int lives = 3;
     [SerializeField] GameObject ball;
 
-    
+    BallScript respawnBall;
 
 	private void OnTriggerEnter2D(Collider2D collision)
     {
-       
+        respawnBall = FindObjectOfType<BallScript>();
         if (collision.gameObject.tag == "Ball")
         {
             
             if (lives > 0)
             {
                 --lives;
-               
-                Instantiate(ball);
+                respawnBall.hasStarted = false;
                 if (lives == 0)
                 {
                     GameOver();

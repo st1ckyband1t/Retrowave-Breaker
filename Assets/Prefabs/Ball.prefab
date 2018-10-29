@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aabb74a2c2b12f4428abc2c7ce14f134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  paddle1: {fileID: 0}
+  paddle1: {fileID: 114109979397374530, guid: 831c4a409716ca64ca901c2cdaf28ce8, type: 2}
   xPushVel: 2
   yPushVel: 15
   randomFactor: 0.5
