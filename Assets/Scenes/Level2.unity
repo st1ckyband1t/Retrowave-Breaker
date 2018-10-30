@@ -1504,23 +1504,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73f6d3df44148304db46ae89b9408ae9, type: 2}
   m_IsPrefabAsset: 0
---- !u!1 &1005520920 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1759588435041172, guid: 0c90f5ca3af98814eab0054842a96d80,
-    type: 2}
-  m_PrefabInternal: {fileID: 1247189982}
---- !u!114 &1005520925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1005520920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: 801c5888bc7a51845892ba4be2bae8be, type: 2}
 --- !u!1001 &1014787562
 Prefab:
   m_ObjectHideFlags: 0
@@ -1987,7 +1970,8 @@ Prefab:
       propertyPath: glowLayer.m_Bits
       value: 16128
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 82806961026317502, guid: 0c90f5ca3af98814eab0054842a96d80, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 0c90f5ca3af98814eab0054842a96d80, type: 2}
   m_IsPrefabAsset: 0
 --- !u!4 &1320397069 stripped
