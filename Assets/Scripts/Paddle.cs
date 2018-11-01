@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,11 @@ public class Paddle : MonoBehaviour {
     [SerializeField] float maxX = 14.45f;
     [SerializeField] AudioClip powerUpSound;
     [SerializeField] float volume = 0.5f;
+    [SerializeField] float resetTime = 5;
+    [SerializeField] float paddleXScaleAddition = 0.5f;
+
+
+    bool broadPaddle = false;
 
 
     //cached references
@@ -18,6 +24,7 @@ public class Paddle : MonoBehaviour {
 
     // Use this for initialization
 	void Awake () {
+        
         theGameSession = FindObjectOfType<GameSession>();
         theBall = FindObjectOfType<BallScript>();
     }
@@ -42,6 +49,28 @@ public class Paddle : MonoBehaviour {
         }
     }
 
+    private void BroadPaddlePowerup()
+    {
+        broadPaddle = true;
+        transform.localScale += new Vector3(paddleXScaleAddition, 0, 0);
+        StartCoroutine("waitTime");
+    }
+
+    private void ResetPaddleSize()
+    {
+        transform.localScale += new Vector3(-0.5f, 0, 0);
+    }
+
+    IEnumerator waitTime()
+    {
+        yield return new WaitForSeconds(resetTime);
+        if(broadPaddle == true)
+        {
+            transform.localScale += new Vector3(-paddleXScaleAddition, 0, 0);
+        }
+        
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "PowerUP")
@@ -49,6 +78,7 @@ public class Paddle : MonoBehaviour {
             //Debug.Log("Paddle collided with" + collision.gameObject.name);
             AudioSource.PlayClipAtPoint(powerUpSound, Camera.main.transform.position, volume);
             Destroy(collision.gameObject);
+            BroadPaddlePowerup();
         }
     }
 }
