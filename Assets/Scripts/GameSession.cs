@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameSession : MonoBehaviour {
 
@@ -21,6 +22,7 @@ public class GameSession : MonoBehaviour {
 
     private void Awake()
     {
+       
         int gameStatusCount = FindObjectsOfType<GameSession>().Length;
         
         if(gameStatusCount > 1)

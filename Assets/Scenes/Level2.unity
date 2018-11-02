@@ -1863,7 +1863,7 @@ MonoBehaviour:
   gameSpeed: 1
   blockBreakPoints: 25
   scoreText: {fileID: 694942926}
-  isAutoplayEnabled: 1
+  isAutoplayEnabled: 0
   currentScore: 0
 --- !u!4 &1168348423
 Transform:
