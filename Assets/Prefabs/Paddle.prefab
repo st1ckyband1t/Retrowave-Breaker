@@ -91,7 +91,7 @@ MonoBehaviour:
   powerUpSound: {fileID: 8300000, guid: 5674ac4706510984c97f800993a55c2b, type: 3}
   volume: 0.5
   resetTime: 10
-  paddleXScaleAddition: 1
+  paddleXScaleAddition: 0.5
 --- !u!212 &212287749056655228
 SpriteRenderer:
   m_ObjectHideFlags: 1

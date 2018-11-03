@@ -11,12 +11,10 @@ public class Paddle : MonoBehaviour {
     [SerializeField] float maxX = 14.45f;
     [SerializeField] AudioClip powerUpSound;
     [SerializeField] float volume = 0.5f;
-    [SerializeField] float resetTime = 5;
+    [SerializeField] float resetTime = 5f;
     [SerializeField] float paddleXScaleAddition = 0.5f;
 
-
     bool broadPaddle = false;
-
 
     //cached references
     GameSession theGameSession;
@@ -37,6 +35,27 @@ public class Paddle : MonoBehaviour {
         transform.position = paddlePos;
 	}
 
+    private void BroadPaddlePowerup()
+    {
+        broadPaddle = true;
+        transform.localScale += new Vector3(paddleXScaleAddition, 0, 0);
+        StartCoroutine(waitTime());
+    }
+
+    IEnumerator waitTime()
+    {
+        Debug.Log("enum called");
+        yield return new WaitForSeconds(resetTime);
+        Debug.Log("waittime over");
+        if (broadPaddle == true)
+        {
+            Debug.Log("Enumerator is working");
+            transform.localScale += new Vector3(-paddleXScaleAddition, 0, 0);
+            broadPaddle = false;
+        }
+
+    }
+
     private float GetXPos()
     {
         if (theGameSession.IsAutoPlayEnabled())
@@ -49,36 +68,15 @@ public class Paddle : MonoBehaviour {
         }
     }
 
-    private void BroadPaddlePowerup()
-    {
-        broadPaddle = true;
-        transform.localScale += new Vector3(paddleXScaleAddition, 0, 0);
-        StartCoroutine("waitTime");
-    }
-
-    private void ResetPaddleSize()
-    {
-        transform.localScale += new Vector3(-0.5f, 0, 0);
-    }
-
-    IEnumerator waitTime()
-    {
-        yield return new WaitForSeconds(resetTime);
-        if(broadPaddle == true)
-        {
-            transform.localScale += new Vector3(-paddleXScaleAddition, 0, 0);
-        }
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "PowerUP")
         {
             //Debug.Log("Paddle collided with" + collision.gameObject.name);
             AudioSource.PlayClipAtPoint(powerUpSound, Camera.main.transform.position, volume);
-            Destroy(collision.gameObject);
             BroadPaddlePowerup();
+            Destroy(collision.gameObject);
+
         }
     }
 }
