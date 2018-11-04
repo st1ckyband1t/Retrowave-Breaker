@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameSession : MonoBehaviour {
 
     //config parameters
-    [Range(0.1f, 10f)][SerializeField] float gameSpeed = 1f;
+    [Range(0.1f, 10f)][SerializeField] public float gameSpeed = 1f;
     [SerializeField] int blockBreakPoints;
     [SerializeField] TextMeshProUGUI scoreText;
     

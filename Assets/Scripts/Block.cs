@@ -11,7 +11,7 @@ public class Block : MonoBehaviour {
     [SerializeField] float volume = 0.5f;
     [SerializeField] GameObject particleEffectVFX;
     [SerializeField] GameObject powerUp;
-    [SerializeField] int randonUpperLimit = 20;
+    [SerializeField] int randonUpperLimit = 2;
     [SerializeField] Sprite[] hitSprites;
 
     //cached reference

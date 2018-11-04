@@ -83,7 +83,7 @@ MonoBehaviour:
   particleEffectVFX: {fileID: 1739278014383782, guid: a7f0075bec3f6a345899202ba843cffc,
     type: 2}
   powerUp: {fileID: 1862968840851832, guid: 3a2203820e9908a43a8c9e8f94fbb0a3, type: 2}
-  randonUpperLimit: 25
+  randonUpperLimit: 10
   hitSprites:
   - {fileID: 21300000, guid: 459a63d37f88bf3429626fd572dc7426, type: 3}
   timesHit: 0

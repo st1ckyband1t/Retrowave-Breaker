@@ -1662,6 +1662,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114158095030747438, guid: 0c90f5ca3af98814eab0054842a96d80,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 82806961026317502, guid: 0c90f5ca3af98814eab0054842a96d80, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 0c90f5ca3af98814eab0054842a96d80, type: 2}
@@ -2392,6 +2397,11 @@ Prefab:
     - target: {fileID: 114095504987903632, guid: c91ea88ae9c911345b4b8c7f3c815b0d,
         type: 2}
       propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114834981845459570, guid: c91ea88ae9c911345b4b8c7f3c815b0d,
+        type: 2}
+      propertyPath: gameSpeed
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
