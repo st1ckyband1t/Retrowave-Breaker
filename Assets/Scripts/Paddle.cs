@@ -16,7 +16,7 @@ public class Paddle : MonoBehaviour {
     [SerializeField] float gameSpeedSlowValue = 0.75f;
     [SerializeField] float gameSpeedFastValue = 1.5f;
     
-
+    //powerup state values
     bool broadPaddle = false;
     bool narrowPaddle = false;
     bool slowmo = false;
@@ -123,7 +123,7 @@ public class Paddle : MonoBehaviour {
 
     private void TriggerPowerUp()
     {
-        int rand = Random.Range(1, 4);
+        int rand = Random.Range(1, 5);
 
         int powerup = rand;
 

@@ -303,6 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: 3
   ball: {fileID: 1381633166253304, guid: 1e8b02c82078c1e4fb67f2a8547ad61d, type: 2}
+  livesText: {fileID: 0}
 --- !u!212 &212457114483338382
 SpriteRenderer:
   m_ObjectHideFlags: 1

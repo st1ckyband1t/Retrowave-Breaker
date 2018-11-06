@@ -2,16 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class LoseCollider : MonoBehaviour {
 
     //config params
-    [SerializeField] int lives = 3;
-    [SerializeField] GameObject ball;
+    [SerializeField] public int lives = 3;
+    [SerializeField] GameObject ball;  
+    [SerializeField] TextMeshProUGUI livesText;
 
     BallScript respawnBall;
 
-	private void OnTriggerEnter2D(Collider2D collision)
+    public void Start()
+    {
+        ShowLives();
+    }
+
+	public void OnTriggerEnter2D(Collider2D collision)
     {
         respawnBall = FindObjectOfType<BallScript>();
         if (collision.gameObject.tag == "Ball")
@@ -20,6 +27,7 @@ public class LoseCollider : MonoBehaviour {
             if (lives > 0)
             {
                 --lives;
+                ShowLives();
                 respawnBall.hasStarted = false;
                 if (lives == 0)
                 {
@@ -36,4 +44,11 @@ public class LoseCollider : MonoBehaviour {
             SceneManager.LoadScene("GameOver Menu");
         }
     }
+
+
+    public void ShowLives()
+    {
+        livesText.text = lives.ToString();
+    }
+
 }

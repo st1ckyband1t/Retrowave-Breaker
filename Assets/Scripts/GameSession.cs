@@ -9,7 +9,9 @@ public class GameSession : MonoBehaviour {
     //config parameters
     [Range(0.1f, 10f)][SerializeField] public float gameSpeed = 1f;
     [SerializeField] int blockBreakPoints;
+    
     [SerializeField] TextMeshProUGUI scoreText;
+    
     
     [SerializeField] bool isAutoplayEnabled;
 
@@ -25,6 +27,7 @@ public class GameSession : MonoBehaviour {
        
         int gameStatusCount = FindObjectsOfType<GameSession>().Length;
         
+        
         if(gameStatusCount > 1)
         {
             Destroy(gameObject);
@@ -38,6 +41,7 @@ public class GameSession : MonoBehaviour {
     private void Start()
     {
         scoreText.text = currentScore.ToString();
+       
         
     }
 
